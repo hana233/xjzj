@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>留下你在西交的足迹</title>
+    <meta name="description" content="西交足迹地图生成器" />
+    <meta name="keywords" content="西交足迹,西交足迹地图生成器,西交地图" />
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="document.css" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1151 1223">
+      <style></style>
+      <style>
+        text {
+          font-family: slice,sans-serif;
+          fill: #111;
+          font-size: 30px;
+        }
+        #title {
+          font-size: 60px;
+        }
+        #分数 {
+          font-size: 60px;
+        }
+        #地区 path,
+        #地区 rect,
+        polyline {
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          stroke: #000;
+          stroke-width: 4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        #地区 path,
+        #地区 rect {
+          fill: #fff;
+          cursor: pointer;
+          pointer-events: auto;
+        }
+        polyline {
+          fill: none;
+          pointer-events: none;
+        }
+        #地区 > *[level="5"] {
+          fill: #ff7e7e;
+        }
+        #地区 > *[level="4"] {
+          fill: #ffb57e;
+        }
+        #地区 > *[level="3"] {
+          fill: #ffe57e;
+        }
+        #地区 > *[level="2"] {
+          fill: #a8ffbe;
+        }
+        #地区 > *[level="1"] {
+          fill: #88aeff;
+        }
+        .level-border {
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          fill: none;
+          stroke: #000000;
+          stroke-width: 4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-miterlimit: 10;
+        }
+      </style>
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#111111;}
+	.st2{font-family:'Tensentype-JiaLiDaYuanGB18030,sans-serif';}
+	.st3{font-size:30px;}
+	.st4{enable-background:new    ;}
+	.st5{font-size:24px;}
+	.st6{font-size:21px;}
+	.st7{font-size:18px;}
+	.st8{fill:#FF7E7E;}
+	.st9{fill:#FFB57E;}
+	.st10{fill:#FFE57E;}
+	.st11{fill:#A8FFBE;}
+	.st12{fill:#88AEFF;}
+	.st13{fill:#FFFFFF;}
+	.st14{fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st15{font-family:'DengXian-Bold';}
+	.st16{font-size:60px;}
+	.st17{font-size:36px;}
+</style>
+      <g id="等级">
+        <path class="st8" d="M912,482h142v50H912V482z"/>
+	<path class="st9" d="M912,532h142v50H912V532z"/>
+	<path class="st10" d="M912,582h142v50H912V582z"/>
+	<path class="st11" d="M912,632h142v50H912V632z"/>
+	<path class="st12" d="M912,682h142v50H912V682z"/>
+	<path class="st13" d="M912,732h142v50H912V732z"/>
+	<path class="st14" d="M912,480h142v304H912V480z"/>
+	<text transform="matrix(1 0 0 1 929 516)" class="st1 st3">常驻５</text>
+	<text transform="matrix(1 0 0 1 929 567)" class="st1 st3">经常去４</text>
+	<text transform="matrix(1 0 0 1 929 617)" class="st1 st3">有时去３</text>
+	<text transform="matrix(1 0 0 1 929 667)" class="st1 st3">很少去２</text>
+	<text transform="matrix(1 0 0 1 929 717)" class="st1 st3">参观过１</text>
+	<text transform="matrix(1 0 0 1 927 767)" class="st1 st3">未进入过</text>
+      </g>
+      <g id="地区">
+	<rect id="西一楼" x="41" y="21" class="st0" width="238" height="109"/>
+	<rect id="北门" x="279" y="21" class="st0" width="296" height="59"/>
+	<rect id="东一楼" x="575" y="21" class="st0" width="238" height="109"/>
+	<rect id="中三楼" x="279" y="80" class="st0" width="77" height="100"/>
+	<rect id="1300<br>大教室" x="279" y="110" class="st0" width="55" height="40"/>
+	<rect id="西二楼" x="41" y="130" class="st0" width="238" height="98"/>
+	<rect id="数学楼" x="356" y="80" class="st0" width="139" height="100"/>
+	<rect id="东宿舍群" x="664" y="759" class="st0" width="149" height="205"/>
+	<rect id="中二楼" x="495" y="80" class="st0" width="80" height="100"/>
+	<rect id="1200<br>大教室" x="519" y="110" class="st0" width="56" height="40"/>
+	<rect id="西花园" x="279" y="180" class="st0" width="77" height="170"/>
+	<rect id="腾飞塔" x="356" y="180" class="st0" width="139" height="170"/>
+	<rect id="东足球场" x="473" y="831" class="st0" width="191" height="168"/>
+	<rect id="东花园" x="495" y="180" class="st0" width="80" height="170"/>
+	<rect id="东二楼" x="575" y="130" class="st0" width="238" height="104"/>
+	<rect id="仲英楼" x="41" y="228" class="st0" width="119" height="202"/>
+	<rect id="生命学院" x="279" y="350" class="st0" width="77" height="117"/>
+	<rect id="钱学森图书馆" x="356" y="350" class="st0" width="139" height="164"/>
+	<rect id="逸夫工程馆" x="279" y="467" class="st0" width="77" height="47"/>
+	<rect id="西宿舍群" x="181" y="712" class="st0" width="204" height="200"/>
+	<rect id="航天学院<br>网络中心" x="495" y="350" class="st0" width="80" height="120"/>
+	<rect id="东三楼" x="575" y="234" class="st0" width="238" height="92"/>
+	<rect id="化学楼" x="41" y="430" class="st0" width="119" height="57"/>
+	<rect id="四大发明广场" x="356" y="514" class="st0" width="139" height="106"/>
+	<rect id="主B" x="356" y="620" class="st0" width="70" height="79"/>
+	<rect id="主A" x="426" y="620" class="st0" width="69" height="79"/>
+	<rect id="校医院" x="740" y="690" class="st0" width="73" height="69"/>
+	<rect id="主C" x="356" y="699" class="st0" width="70" height="88"/>
+	<rect id="主D" x="426" y="699" class="st0" width="69" height="88"/>
+	<rect id="主E" x="396" y="678" class="st0" width="56" height="43"/>
+	<rect id="文体中心" x="41" y="487" class="st0" width="119" height="118"/>
+	<rect id="材料学院<br>实验室" x="160" y="228" class="st0" width="119" height="52"/>
+	<rect id="工程坊B区" x="160" y="280" class="st0" width="119" height="150"/>
+	<rect id="思源中心" x="385" y="864" class="st0" width="88" height="100"/>
+	<rect id="胭脂坡" x="356" y="787" class="st0" width="139" height="77"/>
+	<rect id="能动学院" x="575" y="326" class="st0" width="238" height="294"/>
+	<rect id="西迁纪念馆" x="575" y="369" class="st0" width="67" height="56"/>
+	<rect id="田径场<br>体育中心" x="575" y="425" class="st0" width="185" height="195"/>
+	<rect id="游泳馆" x="760" y="549" class="st0" width="25" height="71"/>
+	<rect id="逸夫科学馆" x="495" y="470" class="st0" width="80" height="150"/>
+	<rect id="艺术中心" x="160" y="430" class="st0" width="119" height="84"/>
+	<rect id="工程坊A区<br>计教中心" x="160" y="514" class="st0" width="119" height="91"/>
+	<rect id="制冷实验室" x="279" y="514" class="st0" width="77" height="91"/>
+	<rect id="彭康楼" x="265" y="605" class="st0" width="91" height="107"/>
+	<rect id="梧桐苑" x="133" y="605" class="st0" width="132" height="107"/>
+	<rect id="彩虹楼" x="41" y="605" class="st0" width="92" height="107"/>
+	<rect id="西篮球场" x="41" y="712" class="st0" width="140" height="125"/>
+	<rect id="西足球场" x="41" y="837" class="st0" width="140" height="75"/>
+	<rect id="文治书院" x="41" y="912" class="st0" width="114" height="78"/>
+	<rect id="逸夫外文楼" x="41" y="990" class="st0" width="114" height="65"/>
+	<rect id="宪梓堂" x="155" y="912" class="st0" width="96" height="83"/>
+	<rect id="崇实书院" x="181" y="844" class="st0" width="98" height="68"/>
+	<rect id="管理学院" x="155" y="995" class="st0" width="110" height="60"/>
+	<rect id="南门" x="385" y="964" class="st0" width="88" height="91"/>
+	<rect id="南洋书院" x="495" y="796" class="st0" width="245" height="35"/>
+	<rect id="仲英书院" x="657" y="620" class="st0" width="93" height="101"/>
+	<rect id="康桥苑" x="495" y="620" class="st0" width="162" height="101"/>
+	<rect id="青年教师公寓" x="495" y="721" class="st0" width="89" height="75"/>
+	<rect id="励志书院" x="584" y="721" class="st0" width="73" height="75"/>
+	<rect id="心理中心" x="657" y="721" class="st0" width="83" height="75"/>
+	<rect id="南草坪" x="251" y="912" class="st0" width="134" height="83"/>
+	<rect id="浴室" x="740" y="759" class="st0" width="41" height="37"/>
+	<rect id="西迁博物馆" x="473" y="937" class="st0" width="62" height="62"/>
+	<rect id="彭康书院" x="664" y="964" class="st0" width="149" height="91"/>
+	<rect id="教学二区" x="830" y="911" class="st0" width="170" height="105"/>
+	<rect id="西南公寓" x="265" y="995" class="st0" width="120" height="60"/>
+	<rect id="东南公寓" x="473" y="999" class="st0" width="191" height="56"/>
+	<rect id="东南门" x="750" y="620" class="st0" width="63" height="70"/>
+        
+       <g id="地名">
+        <text transform="matrix(1 0 0 1 648.6312 85.6525)" class="st1 st3">东一楼</text>
+	<text transform="matrix(1 0 0 1 113.631 85.6524)" class="st1 st3">西一楼</text>
+	<text transform="matrix(1 0 0 1 115.6312 188.6525)" class="st1 st3">西二楼</text>
+	<text transform="matrix(1 0 0 1 648.6313 188.6525)" class="st1 st3">东二楼</text>
+	<text transform="matrix(1 0 0 1 87.6313 303.6525)" class="st4"><tspan x="0" y="0" class="st1 st3">仲</tspan><tspan x="0" y="36" class="st1 st3">英</tspan><tspan x="0" y="72" class="st1 st3">楼</tspan></text>
+	<text transform="matrix(1 0 0 1 55.6313 469.6525)" class="st1 st3">化学楼</text>
+	<text transform="matrix(1 0 0 1 69.6313 539.6525)" class="st4"><tspan x="0" y="0" class="st1 st3">文体</tspan><tspan x="0" y="36" class="st1 st3">中心</tspan></text>
+	<text transform="matrix(1 0 0 1 51.6313 666.6525)" class="st1 st5">彩虹楼</text>
+	<text transform="matrix(1 0 0 1 154.631 670.7839)" class="st1 st3">梧桐苑</text>
+	<text transform="matrix(1 0 0 1 171.631 552.7839)" class="st4"><tspan x="0" y="0" class="st1 st5">&nbsp;工程坊</tspan><tspan x="0" y="28.8" class="st1 st5">计教中心</tspan></text>
+	<text transform="matrix(1 0 0 1 172.3255 482.1073)" class="st1 st5">艺术中心</text>
+	<text transform="matrix(1 0 0 1 172.3251 261.2972)" class="st1 st5">材料学院</text>
+	<text transform="matrix(1 0 0 1 394.6308 59.9737)" class="st1 st3">北门</text>
+	<text transform="matrix(1 0 0 1 281.3251 102.2972)" class="st1 st5">中三楼</text>
+	<text transform="matrix(1 0 0 1 498.3253 102.2971)" class="st1 st5">中二楼</text>
+	<text transform="matrix(1 0 0 1 280.3253 138.2971)" class="st1 st5">1300</text>
+	<text transform="matrix(1 0 0 1 521.9836 138.2975)" class="st1 st5">1200</text>
+	<text transform="matrix(1 0 0 1 176.6308 362.9737)" class="st1 st3">工程坊</text>
+	<text transform="matrix(1 0 0 1 382.6312 137.9736)" class="st1 st3">数学楼</text>
+	<text transform="matrix(1 0 0 1 521.631 240.9738)" class="st4"><tspan x="0" y="0" class="st1 st3">东</tspan><tspan x="0" y="36" class="st1 st3">花</tspan><tspan x="0" y="72" class="st1 st3">园</tspan></text>
+	<text transform="matrix(1 0 0 1 302.6311 241.2949)" class="st4"><tspan x="0" y="0" class="st1 st3">西</tspan><tspan x="0" y="36" class="st1 st3">花</tspan><tspan x="0" y="72" class="st1 st3">园</tspan></text>
+	<text transform="matrix(1 0 0 1 403.3253 706.7497)" class="st1 st5">主E</text>
+	<text transform="matrix(1 0 0 1 370.679 667.1072)" class="st1 st5">主B</text>
+	<text transform="matrix(1 0 0 1 443.679 667.1072)" class="st1 st5">主A</text>
+	<text transform="matrix(1 0 0 1 370.679 757.1072)" class="st1 st5">主C</text>
+	<text transform="matrix(1 0 0 1 443.679 757.1072)" class="st1 st5">主D</text>
+	<text transform="matrix(1 0 0 1 51.6311 786.9149)" class="st1 st3">西篮球场</text>
+	<text transform="matrix(1 0 0 1 52.6311 883.9149)" class="st1 st3">西足球场</text>
+	<text transform="matrix(1 0 0 1 206.3253 871.2391)" class="st4"><tspan x="0" y="0" class="st1 st5">崇实</tspan><tspan x="0" y="28.8" class="st1 st5">书院</tspan></text>
+	<text transform="matrix(1 0 0 1 209.6308 795.915)" class="st1 st3">西宿舍群</text>
+	<text transform="matrix(1 0 0 1 678.6308 905.915)" class="st1 st3">东宿舍群</text>
+	<text transform="matrix(1 0 0 1 678.6308 1022.915)" class="st1 st3">彭康书院</text>
+	<text transform="matrix(1 0 0 1 855.6308 974.915)" class="st1 st3">教学二区</text>
+	<text transform="matrix(1 0 0 1 74.3255 943.8388)" class="st4"><tspan x="0" y="0" class="st1 st5">文治</tspan><tspan x="0" y="28.8" class="st1 st5">书院</tspan></text>
+	<text transform="matrix(1 0 0 1 680.3254 665.8388)" class="st4"><tspan x="0" y="0" class="st1 st5">仲英</tspan><tspan x="0" y="28.8" class="st1 st5">书院</tspan></text>
+	<text transform="matrix(1 0 0 1 596.3254 752.8388)" class="st4"><tspan x="0" y="0" class="st1 st5">励志</tspan><tspan x="0" y="28.8" class="st1 st5">书院</tspan></text>
+	<text transform="matrix(1 0 0 1 570.3254 821.8388)" class="st1 st5">南洋书院</text>
+	<text transform="matrix(1 0 0 1 676.3254 752.8388)" class="st4"><tspan x="0" y="0" class="st1 st5">心理</tspan><tspan x="0" y="28.8" class="st1 st5">中心</tspan></text>
+	<text transform="matrix(1 0 0 1 745.3254 744.8388)" class="st1 st6">校医院</text>
+	<text transform="matrix(1 0 0 1 743.3254 784.8388)" class="st1 st7">浴室</text>
+	<text transform="matrix(1 0 0 1 477.3255 963.8388)" class="st4"><tspan x="0" y="0" class="st1 st7">&nbsp;西迁</tspan><tspan x="0" y="21.6" class="st1 st7">博物馆</tspan></text>
+	<text transform="matrix(1 0 0 1 63.3255 1015.8388)" class="st4"><tspan x="0" y="0" class="st1 st5">&nbsp;逸夫</tspan><tspan x="0" y="28.8" class="st1 st5">外文楼</tspan></text>
+	<text transform="matrix(1 0 0 1 381.6311 834.5938)" class="st1 st3">胭脂坡</text>
+	<text transform="matrix(1 0 0 1 404.3255 893.5176)" class="st4"><tspan x="0" y="0" class="st1 st5">思源</tspan><tspan x="0" y="28.8" class="st1 st5">活动</tspan><tspan x="0" y="57.6" class="st1 st5">中心</tspan></text>
+	<text transform="matrix(1 0 0 1 398.631 1020.105)" class="st1 st3">南门</text>
+	<text transform="matrix(1 0 0 1 274.3253 670.5602)" class="st1 st5">彭康楼</text>
+	<text transform="matrix(1 0 0 1 532.6311 682.2361)" class="st1 st3">康桥苑</text>
+	<text transform="matrix(1 0 0 1 161.3251 1034.2388)" class="st1 st5">管理学院</text>
+	<text transform="matrix(1 0 0 1 158.6308 963.915)" class="st1 st3">宪梓堂</text>
+	<text transform="matrix(1 0 0 1 274.631 963.9152)" class="st1 st3">南草坪</text>
+	<text transform="matrix(1 0 0 1 294.6311 1034.9153)" class="st1 st3">公寓</text>
+	<text transform="matrix(1 0 0 1 538.6312 1035.368)" class="st1 st3">公寓</text>
+	<text transform="matrix(1 0 0 1 510.6308 911.3676)" class="st1 st3">东足球场</text>
+	<text transform="matrix(1 0 0 1 508.6314 769.6887)" class="st1 st3">公寓</text>
+	<text transform="matrix(1 0 0 1 663.631 386.8787)" class="st1 st3">能动学院</text>
+	<text transform="matrix(1 0 0 1 648.6315 290.8788)" class="st1 st3">东三楼</text>
+	<text transform="matrix(1 0 0 1 382.6308 271.6524)" class="st1 st3">腾飞塔</text>
+	<text transform="matrix(1 0 0 1 381.6308 425.6524)" class="st4"><tspan x="0" y="0" class="st1 st3">钱学森</tspan><tspan x="0" y="36" class="st1 st3">图书馆</tspan></text>
+	<text transform="matrix(1 0 0 1 581.0192 391.3102)" class="st4"><tspan x="0" y="0" class="st1 st7">&nbsp;西迁</tspan><tspan x="0" y="21.6" class="st1 st7">纪念馆</tspan></text>
+	<text transform="matrix(1 0 0 1 763.0194 568.179)" class="st4"><tspan x="0" y="0" class="st1 st7">游</tspan><tspan x="0" y="21.6" class="st1 st7">泳</tspan><tspan x="0" y="43.2" class="st1 st7">馆</tspan></text>
+	<text transform="matrix(1 0 0 1 607.6311 514.3311)" class="st4"><tspan x="0" y="0" class="st1 st3">&nbsp;田径场</tspan><tspan x="0" y="36" class="st1 st3">体育中心</tspan></text>
+	<text transform="matrix(1 0 0 1 293.3255 408.2549)" class="st4"><tspan x="0" y="0" class="st1 st5">生命</tspan><tspan x="0" y="28.8" class="st1 st5">学院</tspan></text>
+	<text transform="matrix(1 0 0 1 512.3251 408.2551)" class="st4"><tspan x="0" y="0" class="st1 st5">航天</tspan><tspan x="0" y="28.8" class="st1 st5">学院</tspan></text>
+	<text transform="matrix(1 0 0 1 499.3253 537.2552)" class="st4"><tspan x="0" y="0" class="st1 st5">&nbsp;逸夫</tspan><tspan x="0" y="28.8" class="st1 st5">科学馆</tspan></text>
+	<text transform="matrix(1 0 0 1 281.3254 553.8389)" class="st4"><tspan x="0" y="0" class="st1 st5">&nbsp;制冷</tspan><tspan x="0" y="28.8" class="st1 st5">实验室</tspan></text>
+	<text transform="matrix(1 0 0 1 281.3256 497.839)" class="st1 st5">工程馆</text>
+	<text transform="matrix(1 0 0 1 366.631 561.2364)" class="st4"><tspan x="0" y="0" class="st1 st3">四大发明</tspan><tspan x="0" y="36" class="st1 st3">&nbsp;&nbsp;广场</tspan></text>
+	<text transform="matrix(1 0 0 1 755.0961 659.1158)" class="st1 st7">东南门</text>
+
+      </g>
+       <text id="标题" transform="matrix(1 0 0 1 844.1598 86.1301)" class="st1 st16">西交足迹</text>
+       <text id="标题_1_" transform="matrix(1 0 0 1 844.1019 128.8453)" class="st1 st17">（兴庆校区）</text>
+       <text id="分数" transform="matrix(1 0 0 1 836.1598 215.7141)" class="st1 st16">分数</text>
+       <text transform="matrix(1 0 0 1 836.631 821.4261)" class="st4"><tspan x="0" y="0" class="st1 st3">制图：杨察天</tspan><tspan x="0" y="36" class="st1 st3">原案@神奇海螺试验场</tspan><tspan x="0" y="72" class="st1 st3">参考@清华园制霸</tspan></text>
+       <text id="标题_2_" transform="matrix(1 0 0 1 34.8859 1091.0974)" class="st4"><tspan x="0" y="0" class="st1 st5">本功能仅供娱乐，地图如有不够精细之处，敬请谅解</tspan><tspan x="0" y="28.8" class="st1 st5">关于选项的说明（供参考）：</tspan><tspan x="0" y="57.6" class="st1 st5">常驻：长期居住、科研、工作（过）的地方  </tspan><tspan x="0" y="86.4" class="st1 st5">经常去：2个或以上学期上过课、经常自习等的地方</tspan><tspan x="0" y="115.2" class="st1 st5">有时去：只上过一两门课、有时自习等的地方</tspan></text>
+       <text id="标题_3_" transform="matrix(1 0 0 1 608.063 1090.8356)" class="st4"><tspan x="0" y="0" class="st1 st5"> </tspan><tspan x="0" y="28.8" class="st1 st5"> </tspan><tspan x="0" y="57.6" class="st1 st5">很少去：只上过非主课或特殊情况偶尔去过的地方  </tspan><tspan x="0" y="86.4" class="st1 st5">参观过：仅仅进入或参观过一两次的地方</tspan><tspan x="0" y="115.2" class="st1 st5">未进入过：只是路过，甚至不知道这里是什么地方</tspan></text>
+ 
+    </g>
+    </svg>
+    <div id="设置等级">
+      <h2>地区</h2>
+      <a data-level="5">常驻</a>
+      <a data-level="4">经常去</a>
+      <a data-level="3">有时去</a>
+      <a data-level="2">很少去</a>
+      <a data-level="1">参观过</a>
+      <a data-level="0">未进入过</a>
+    </div>
+    <footer>
+      <a id="保存" class="按钮">保存成图片</a>
+    </footer>
+    <div id="输出图像" style="display: none">
+      <div>
+        <img />
+      </div>
+      <p>
+        手机端可长按图片
+        <b>“添加到照片”</b>
+      </p>
+      <div>
+        <a class="按钮">关闭</a>
+      </div>
+    </div>
+    <script src="document.js"></script>
+  </body>
+</html>
+
