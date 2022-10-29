@@ -51,7 +51,7 @@ a {
   margin: 0;
   font-weight: normal;
   font-size: 26px;
-  line-height: 20px;
+  line-height: 40px;
   cursor: default;
 }
 #设置等级 a {
@@ -147,16 +147,16 @@ footer a.按钮 {
     box-shadow: 0 0 0 2px #111;
   }
   #设置等级 {
-    width: 60px;
+    width: 110px;
     border-width: 2px;
   }
   #设置等级 h2 {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 18px;
+    line-height: 30px;
   }
   #设置等级 a {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 @media (max-width: 480px) and (min-height: 600px) {
